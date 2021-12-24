@@ -5,7 +5,7 @@ print("Welcome to my simple, python, console calculator. \nTo start just write: 
 command = str(input('Hello, User. What is your desired command >> '))
 loop = True
 
-# Gives you commands that can be written in the command prompt or power shell etc.
+# Gives you commands that can be written in the command prompt, power shell etc.
 def choose_command():
     if command == 'Calculator-Start' or command == 'C-S':
         number_one = int(input('Enter first number: '))
