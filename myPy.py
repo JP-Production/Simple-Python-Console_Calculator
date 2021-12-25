@@ -1,9 +1,8 @@
 # Shows a little string when the script is executed
-print("Welcome to my simple, python, console calculator. \nTo start just write: Calculator-Start or C-S for short | \nWrite /VOperators to get a list of valid Math Operations.\n")
+print("Welcome to my simple, python, console calculator. \nTo start just write: Calculator-Start or C-S for short | \nWrite /VOperators or /VO to get a list of valid Math Operations.\n")
 
 # Some variable's
 command = str(input('Hello, User. What is your desired command >> '))
-loop = True
 
 # Gives you commands that can be written in the command prompt or power shell etc.
 def choose_command():
@@ -12,7 +11,7 @@ def choose_command():
         operator = str(input('Enter Operation: '))
         number_two = int(input('Enter second number: '))
         calculate(number_one, operator, number_two)           
-    elif command == '/VOperators':
+    elif command == '/VOperators' or command == '/VO':
         print('Valid Operators:\n {\n +, \n *, \n -, \n / \n }')
 
 # Calculates math operations
