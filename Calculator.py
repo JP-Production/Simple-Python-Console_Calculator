@@ -7,9 +7,9 @@ command = str(input('Hello, User. What is your desired command >> '))
 # Gives you commands that can be written in the command prompt, power shell etc.
 def choose_command():
     if command == 'Calculator-Start' or command == 'C-S':
-        number_one = int(input('Enter first number: '))
+        number_one = float(input('Enter first number: '))
         operator = str(input('Enter Operation: '))
-        number_two = int(input('Enter second number: '))
+        number_two = float(input('Enter second number: '))
         calculate(number_one, operator, number_two)           
     elif command == '/VOperators' or command == '/VO':
         print('Valid Operators:\n {\n +, \n *, \n -, \n / \n }')
